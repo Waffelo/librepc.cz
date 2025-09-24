@@ -1,0 +1,211 @@
+:root {
+    --background-primary: #171718;
+    --background-secondary: #121010;
+    --background-tertiary: #4b4b4b;
+    
+    --foreground-primary: #b1a9a0;
+    --foreground-secondary: #d8c8c8;
+
+    /* --accent: #3d3dcd; */
+    --accent: #bc7d39;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16.2px;
+    color: var(--foreground-primary);
+    background-color: var(--background-primary);
+    margin: 0px;
+}
+
+::selection {
+    background-color: var(--accent);
+    color: var(--background-primary);
+}
+
+.container a {
+    color: var(--accent);
+}
+
+.container a:hover {
+    filter: brightness(120%);
+}
+
+.flex {
+    display: flex;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.f-center {
+    justify-content: center;
+}
+
+.container {
+    padding: 10px 40px 10px 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.btn {
+    color: var(--foreground-secondary);
+    display: flex;
+    padding: 10px 15px 10px 15px;
+    margin: 5px;
+    background-color: var(--background-secondary);
+    text-decoration: none;
+    color: var(--foreground-primary);
+}
+
+.btn:hover {
+      transform: scale(1.05);
+}
+
+a, a:link, a:visited, a:hover, a:active > .btn {
+    text-decoration: none!important;
+}
+
+.benefit-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.benefit {
+    background-color: var(--background-primary);
+    flex-grow: 1;
+    max-width: 160px;
+    text-align: center;
+    margin: 7px;
+    padding: 20px;
+}
+
+.benefit:hover {
+      transform: scale(1.05);
+}
+
+.benefit img {
+    width: 100px;
+    filter: brightness(60%) sepia(100%);
+}
+
+.buy-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.item-listing {
+    background-color: var(--background-secondary);
+    padding: 10px;
+    margin: 7px;
+    flex: 0 0  250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-listing:hover {
+      transform: scale(1.03);
+    cursor: pointer;
+}
+
+.item-listing  hr {
+    border-color: var(--background-tertiary);
+    width: 100%;
+}
+
+.item-img {
+    width: 100%;
+}
+
+.item-listing img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.item-listing ul {
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+.item-listing ul li img {
+    width: 20px;
+    margin-right: 5px;
+    filter: brightness(60%) sepia(100%);
+}
+
+.item-price {
+    border: 1px solid var(--background-tertiary);
+    padding: 5px;
+}
+
+.item-price img {
+    width: 20px;
+}
+
+.c-landing {
+    /* background-image: url("assets/bg.png"); */
+    background-color: var(--accent);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--background-secondary);
+
+}
+
+.c-landing img {
+    filter: invert();
+}
+
+.landing-info {
+    position: relative;
+    z-index: 1; /* keep text above image */
+    text-align: center;
+    padding: 2rem; /* optional, for spacing */
+}
+
+.c-about {
+    background-color: var(--background-secondary);
+    width: 100%;
+}
+
+.c-custom {
+    background-color: var(--background-secondary);
+}
+
+.c-info {
+    background-color: var(--background-secondary);
+}
+
+.split-info {
+    display: flex;
+}
+
+.split-info div {
+    margin: 15px;
+    text-align: justify;
+    min-width: 320px;
+}
+
+.footer p {
+    padding: 0px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: var(--background-secondary);
+}
